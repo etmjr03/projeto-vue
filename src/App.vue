@@ -1,19 +1,27 @@
 <template>
   <HeaderComponent/>
+  <DashboardComponent/>
 </template>
 
 <script>
+import DashboardComponent from './components/DashboardComponent.vue';
 import HeaderComponent from './components/HeaderComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HeaderComponent
+    HeaderComponent,
+    DashboardComponent
   }
 }
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
   height: 100vh;
   overflow: hidden;
@@ -33,7 +41,7 @@ body{
 
 @media only screen and (max-width: 800px) {
   body{
-    background: #FFF;
+    
   }
 }
 </style>

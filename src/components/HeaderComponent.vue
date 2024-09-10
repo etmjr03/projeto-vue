@@ -39,9 +39,9 @@ export default {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    z-index: 1;
     
     background: rgba(255, 255, 255, 0.26);
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.1px);
     -webkit-backdrop-filter: blur(6.1px);
@@ -90,7 +90,7 @@ export default {
 
   @media only screen and (max-width: 800px) {
   .menu-principal{
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     flex-direction: column;
     position: absolute;
@@ -106,7 +106,7 @@ export default {
 
   .item-menu-responsivo{
     display: flex;
-    margin-top: 10px;
+    margin: 10px;
   }
 
   .esconder-menu-mobile{
